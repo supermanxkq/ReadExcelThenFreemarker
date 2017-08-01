@@ -118,7 +118,7 @@ public class FreemarkerUtil {
 			else
 				wb = new HSSFWorkbook(input);
 			// 获取第几个表单
-			Sheet sheet = wb.getSheetAt(5); // 获得第一个表单
+			Sheet sheet = wb.getSheetAt(Integer.parseInt(UrlEnum.SHEETNUM.getStatus())); // 获得第一个表单
 			int lastRowNum = sheet.getLastRowNum();
 
 			Row row = null;
@@ -129,8 +129,8 @@ public class FreemarkerUtil {
 				if (row == null) {
 					continue;
 				}
-				cell_a = row.getCell(1); // 取得i行的第一列
-				cell_b = row.getCell(2); // 取得i行的第一列
+				cell_a = row.getCell(Integer.parseInt(UrlEnum.COLUMNNUM.getStatus())); // 取得i行的第一列
+				cell_b = row.getCell(Integer.parseInt(UrlEnum.COLUMNNUM2.getStatus())); // 取得i行的第一列
 				if (cell_a == null || cell_b == null) {
 					continue;
 				}

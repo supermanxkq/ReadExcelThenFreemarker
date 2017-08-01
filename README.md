@@ -20,6 +20,8 @@
 	
 **使用方法**
 
+- user.xlsx
+	- 将user.xlsx文件移动到UrlEnum.INPATH配置的位置。
 - 下载
 	- git clone ...
 	- 下载压缩包
