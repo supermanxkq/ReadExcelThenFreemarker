@@ -1,0 +1,25 @@
+apply plugin: 'java-library'
+
+repositories {
+    // Use jcenter for resolving your dependencies.
+    // You can declare any Maven/Ivy/file repository here.
+    jcenter()
+}
+
+ext{
+	freemarkerVersion = '2.3.23'
+	junitVersion = '4.12'
+	poiVersion = '3.14'
+	commonsLang3Version = '3.4'
+}
+
+dependencies {
+    compile "org.freemarker:freemarker:$freemarkerVersion"
+    testCompile "junit:junit:$junitVersion"
+    compile "org.apache.poi:poi:$poiVersion"
+	compile "org.apache.poi:poi-ooxml:$poiVersion"
+  	compile "org.apache.poi:poi-ooxml-schemas:$poiVersion"
+  	compile "org.apache.commons:commons-lang3:$commonsLang3Version"
+  	
+}
+
