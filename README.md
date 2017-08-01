@@ -13,10 +13,10 @@
 
 ### 相关技术
 
-	> Java
-	> gradle
-	> freemarker
-	> POI
+> Java
+> gradle
+> freemarker
+> POI
 	
 **使用方法**
 
@@ -32,7 +32,7 @@
 
 # 联系作者
 	
-	> Email：994028591@qq.com
-	> wechat:xukaiqiang12345	
+> Email：994028591@qq.com
+> wechat:xukaiqiang12345	
 
 	
